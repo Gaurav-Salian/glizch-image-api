@@ -26,7 +26,7 @@ app.post("/generate-image", async (req, res) => {
 
   try {
     const response = await ai.generateContent({
-      model: "gemini-1.5-flash", // Use a valid model (check Gemini API docs for the correct model)
+      model: "gemini-2.0-flash-exp-image-generation", // Use a valid model (check Gemini API docs for the correct model)
       prompt: contents,
       responseMimeType: "image/png", // Specify the desired output format
     });
